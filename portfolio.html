@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+
+body{
+    margin:0;
+    padding:20px;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.gallery-item{
+    width:280px;
+    background:white;
+    border:1px solid #ddd;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-5px);
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-item img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+}
+
+.desc{
+    text-align:center;
+    padding:15px;
+    font-size:22px;
+}
+.big-footer{
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.footer-content h2{
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.footer-content p{
+  color: #ccc;
+}
+
+.footer-links{
+  margin: 25px 0;
+}
+
+.footer-links a{
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover{
+  color: #25D366;
+}
+
+/* Icons style */
+.footer-icons{
+  margin: 20px 0;
+}
+
+.footer-icons a{
+  display: inline-block;
+  margin: 0 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.footer-icons img{
+  height: 25px;
+  width: 25px;
+}
+
+/* Copyright */
+copyright{
+  font-size: 13px;
+  color: #777;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+<div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+  </ul>
+</div>
+
+<h2>Portfolio Samples</h2>
+
+<div class="gallery">
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/3.jpg">
+            <img src="images/3.jpg" alt="">
+        </a>
+        <div class="desc">Creative Design</div>
+    </div>
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/5.jpg">
+            <img src="images/5.jpg" alt="">
+        </a>
+        <div class="desc">Editable Design</div>
+    </div>
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/2.jpg">
+            <img src="images/2.jpg" alt="">
+        </a>
+        <div class="desc">Responsive</div>
+    </div>
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/11.jpg">
+            <img src="images/11.jpg" alt="">
+        </a>
+        <div class="desc">Urgent order</div>
+    </div>
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/8.jpg">
+            <img src="images/8.jpg" alt="">
+        </a>
+        <div class="desc">Registration Form</div>
+    </div>
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/9.jpg">
+            <img src="images/9.jpg" alt="">
+        </a>
+        <div class="desc">LogIn Form</div>
+    </div>
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/10.jpg">
+            <img src="images/10.jpg" alt="">
+        </a>
+        <div class="desc">Website 1</div>
+    </div>
+
+    <div class="gallery-item">
+        <a target="_blank" href="images/13.jpg">
+            <img src="images/13.jpg" alt="">
+        </a>
+        <div class="desc">website 2</div>
+    </div>
+
+</div>
+<!-- NAVBAR -->
+<footer class="big-footer">
+
+  <div class="footer-content">
+
+    <!-- Logo / Title -->
+    <h2>My Portfolio</h2>
+    <p>Frontend Developer | HTML | CSS | JavaScript</p>
+
+    <!-- Pages Links -->
+    <div class="footer-links">
+     <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Projects</a>
+      <a href="portfolio.html">Contact</a>
+    </div>
+
+    <!-- Contact Icons -->
+    <div class="footer-icons">
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/923049201840?text=Hello%20I%20visited%20your%20website" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png">
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:yourgmail@gmail.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+      </a>
+
+    </div>
+
+    <p class="copyright">
+      © 2026 All Rights Reserved | Designed by Sonia
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+</body>
+</html>
