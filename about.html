@@ -8,6 +8,31 @@
 <link rel="stylesheet" href="styles.css">
 
 <style>
+    .about-section{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    padding:20px;
+}
+
+.about-text{
+    flex:1;
+}
+
+img.sticky{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:0;
+}
+
+@media(max-width:768px){
+    .about-section{
+        flex-direction:column;
+        text-align:center;
+    }
+}
 img.sticky{
     display:block;
     margin:20px auto;
