@@ -1,73 +1,35 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About</title>
 <link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-img.sticky {
-  position: sticky;
-  top: 2;
-  width: 100px;
-  height:150px;
-  
+img.sticky{
+    display:block;
+    margin:20px auto;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
 }
 
-.big-footer{
-  width: 100%;
-  background: black;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
 }
 
-.footer-content h2{
-  margin-bottom: 10px;
-  font-size: 28px;
-}
-
-.footer-content p{
-  color: #ccc;
-}
-
-.footer-links{
-  margin: 25px 0;
-}
-
-.footer-links a{
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.footer-links a:hover{
-  color: #25D366;
-}
-
-/* Icons style */
-.footer-icons{
-  margin: 20px 0;
-}
-
-.footer-icons a{
-  display: inline-block;
-  margin: 0 10px;
-  background: white;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.footer-icons img{
-  height: 25px;
-  width: 25px;
-}
-
-/* Copyright */
-copyright{
-  font-size: 13px;
-  color: #777;
-  margin-top: 20px;
+@media(max-width:768px){
+    .skills-container{
+        flex-direction:column;
+        align-items:center;
+    }
 }
 </style>
 
@@ -76,87 +38,25 @@ copyright{
 <body>
 
 <ul>
-  <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-  
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
 </ul>
 
-<img class="sticky" src="images/6.png" style="width:100px; height:100px; border-radius:50%;" alt="Avatar">
-<p ><strong>ABOUT ME</strong></p>
-<p style="text-align: center; font-family:sans serif;">Web development is the process of creating and maintaining websites that run on the internet. It includes designing the structure, layout, and functionality of a website to make it user-friendly and visually appealing. I specialize in front-end development where I use HTML and CSS to build responsive and modern web pages. My focus is on creating clean, attractive, and mobile-friendly websites that provide a smooth user experience across all devices.
+<img class="sticky" src="images/6.png" alt="Profile">
+
+<p style="text-align:center;">
+<strong>ABOUT ME</strong>
 </p>
-<br><br>
+
+<p style="text-align:center;">
+Web development is the process of creating and maintaining websites that run on the internet. It includes designing the structure, layout, and functionality of a website to make it user-friendly and visually appealing. I specialize in front-end development where I use HTML and CSS to build responsive and modern web pages.
+</p>
+
 <div class="success">
-  <p><strong>MY SKILLS</strong> <marquee>Turn your ideas in reality</marquee></p>
+<p><strong>MY SKILLS</strong></p>
 </div>
 
 <div class="skills-container">
 
-  <div class="box">
-    <h3>HTML</h3>
-    <p>Structure of websites</p>
-  </div>
-
-  <div class="box">
-    <h3>CSS</h3>
-    <p>Design and styling</p>
-  </div>
-<div class="box">
-    <h3>CSS</h3><br>
-    <p>Modern design</p>
-  </div>
-
-  <div class="box">
-    <h3>Responsive Design</h3>
-    <p>Mobile friendly websites</p>
-  </div>
- <p style="text-align: justify; font-family:sans serif;color:red;"><marquee>Feel Free To Contact Me----Email:: soniahanifbrw@gmail.com</marquee></p>
-
-<!-- NAVBAR -->
-<footer class="big-footer">
-
-  <div class="footer-content">
-
-    <!-- Logo / Title -->
-    <h2>My Portfolio</h2>
-    <p>Frontend Developer | HTML | CSS | JavaScript</p>
-
-    <!-- Pages Links -->
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Projects</a>
-      <a href="portfolio.html">Contact</a>
-    </div>
-
-    <!-- Contact Icons -->
-    <div class="footer-icons">
-
-      <!-- WhatsApp -->
-      <a href="https://wa.me/923049201840?text=Hello%20I%20visited%20your%20website" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png">
-      </a>
-
-      <!-- Email -->
-      <a href="mailto:yourgmail@gmail.com">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
-      </a>
-
-    </div>
-
-    <p class="copyright">
-      © 2026 All Rights Reserved | Designed by Sonia
-    </p>
-
-  </div>
-
-</footer>
-
-
-
-
-
-</div></body>
-</html>
